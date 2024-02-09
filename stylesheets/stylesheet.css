@@ -3,12 +3,10 @@
 body{
     margin: 0;
     font-family: Arial, Helvetica, sans-serif;
-    /*
     background-color: #FFFFFF;
-    color: #000000;*/
+    color: #000000;
 }
 
-/*
 .toggle{
     position:relative;
 }
@@ -44,14 +42,14 @@ body{
 }
 
 .dark-mode {
-    background-color: #0E0D0D;
+    background-color: #383838;
     color: #FFFFFF;
 }
 
 .light-mode {
     background-color: #FFFFFF;
     color: #000000;
-}*/
+}
 
 #navbar{
     overflow: hidden;
@@ -140,6 +138,14 @@ body{
 .footer a:link{
     color:#FFFFFF;
     text-decoration: none;
+}
+
+.dark-mode a{
+    color:#b7c4ff;
+}
+
+.dark-mode a:visited{
+    color:#6172bd;
 }
 
 .footer a:visited{
