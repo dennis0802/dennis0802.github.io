@@ -3,42 +3,57 @@
     <head>
         <title>Contact Me</title>
         <link rel="stylesheet" href="stylesheets/stylesheet.css"/>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <link rel="icon" type="image/x-icon" href="images/favicon.ico">
         <script src="files/darkmode.js" defer></script> 
+        <script src="files/menu.js"></script>
         <meta charset="utf-8">
     </head>
     
     <body class="page light-mode">
         <div id="navbar">
-            <a href="index.html" id="logo">Dennis Dao</a>
+            <div class="navbar-item" style="width:30%;">
+                <a href="index.html" id="logo">Dennis Dao</a>
+            </div>
 
-            <div id="navbar-right">
+            <div class="navbar-item-menu" id="navbarMenu" style="width:50%;">
                 <a href="index.html">Home</a>
                 <a href="about.html">About</a>
                 <a href="skills.html">Skills</a>
+                <a href="exp.html">Experience</a>
                 <a href="projects.html">Projects</a>
                 <a href="resume.html">Resume</a>
                 <a class="active" href="contact.html">Contact</a>
+                <a href="javascript:void(0);" class="icon" onclick="responsiveMenu()">
+                    <i class="fa fa-bars"></i>
+                </a>
+            </div>
+
+            <div class="navbar-item" style="width:20%;">
+                <div class="toggle">
+                    <input type="checkbox" id="theme" class="toggle-input">
+                    <label for="theme" class="toggle-label">
+                        <img src="./images/moon.png" alt="Dark mode" class="toggle-icon">
+                    </label>
+                </div>
             </div>
         </div>
 
         <div id="content">
-            <div class="toggle">
-                <input type="checkbox" id="theme" class="toggle-input">
-                <label for="theme" class="toggle-label">
-                    <img src="./images/moon.png" alt="Dark mode" class="toggle-icon">
-                </label>
-            </div>
-
             <h1>Contact Me</h1>
             <p>Feel free to reach out to say hello or to work on something together!</p>
-            <a href="mailto: dennisdao2001@gmail.com"><button class="button buttonTheme"><img src="images/email.png" id="email" alt="Email">dennisdao2001@gmail.com</button></a>
-            <a href="https://www.linkedin.com/in/dennis-dao0802/"><button class="button buttonTheme"><img src="images/linkedin.png" id="linkedin" alt="LinkedIn">LinkedIn</button></a>
-            <a href="https://github.com/dennis0802"><button class="button buttonTheme"><img src="images/githubLarge.png" id="github" alt="GitHub">GitHub</button></a>    
+            <a href="mailto: dennisdao2001@gmail.com"><button class="button buttonTheme"><img src="images/email.png" id="email" alt="Email"><br/>dennisdao2001@gmail.com</button></a>
+            <a href="https://www.linkedin.com/in/dennis-dao0802/"><button class="button buttonTheme"><img src="images/linkedin.png" id="linkedin" alt="LinkedIn"><br/>LinkedIn</button></a>
+            <a href="https://github.com/dennis0802"><button class="button buttonTheme"><img src="images/githubLarge.png" id="github" alt="GitHub"><br/>GitHub</button></a>    
                 
         </div>
         <div class="footer">
+            <p id="copyright"></p>
             <a href="#top">Return to Top</a>
         </div>
+        <script>
+            var date = new Date();
+            document.getElementById("copyright").innerHTML = "© " + date.getFullYear() + " Dennis Dao. All rights reserved.";
+        </script>
    </body>
 </html>

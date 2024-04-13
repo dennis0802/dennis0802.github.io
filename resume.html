@@ -3,42 +3,59 @@
     <head>
         <title>My Resume</title>
         <link rel="stylesheet" href="stylesheets/stylesheet.css"/>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <link rel="icon" type="image/x-icon" href="images/favicon.ico">
         <script src="files/darkmode.js" defer></script> 
+        <script src="files/menu.js"></script>
         <meta charset="utf-8">
     </head>
 
     <body class="page light-mode">
         <div id="navbar">
-            <a href="index.html" id="logo">Dennis Dao</a>
+            <div class="navbar-item" style="width:30%;">
+                <a href="index.html" id="logo">Dennis Dao</a>
+            </div>
 
-            <div id="navbar-right">
+            <div class="navbar-item-menu" id="navbarMenu" style="width:50%;">
                 <a href="index.html">Home</a>
                 <a href="about.html">About</a>
                 <a href="skills.html">Skills</a>
+                <a href="exp.html">Experience</a>
                 <a href="projects.html">Projects</a>
                 <a class="active" href="resume.html">Resume</a>
                 <a href="contact.html">Contact</a>
+                <a href="javascript:void(0);" class="icon" onclick="responsiveMenu()">
+                    <i class="fa fa-bars"></i>
+                </a>
+            </div>
+
+            <div class="navbar-item" style="width:20%;">
+                <div class="toggle">
+                    <input type="checkbox" id="theme" class="toggle-input">
+                    <label for="theme" class="toggle-label">
+                        <img src="./images/moon.png" alt="Dark mode" class="toggle-icon">
+                    </label>
+                </div>
             </div>
         </div>
 
         <div id="content">
-            <div class="toggle">
-                <input type="checkbox" id="theme" class="toggle-input">
-                <label for="theme" class="toggle-label">
-                    <img src="./images/moon.png" alt="Dark mode" class="toggle-icon">
-                </label>
-            </div>
-
             <h1>My Resume</h1>
-                <object data="documents/DennisDao_Resume.pdf" type="application/pdf" width="100%" height="1000px">
-                    <p>Unable to display PDF file. <a href="documents/DennisDao_Resume.pdf">Download if unable to view.</a></p>
-                </object>
+            <object data="documents/DennisDao_Resume.pdf" type="application/pdf" id="resumeBlock">
+                <p>Unable to display PDF file. <a href="documents/DennisDao_Resume.pdf">Download if unable to view.</a></p>
+            </object>
+            <p><a href="documents/DennisDao_Resume.pdf">Click here to view directly in browser.</a></p>
+
             <h2>Other Documents</h2>
             <a href="documents/DennisDao_Transcript.pdf"><button class="button buttonTheme"><img src="images/transcript.png" id="pdf" alt="Transcript icon">Transcript</button></a>
         </div>
         <div class="footer">
+            <p id="copyright"></p>
             <a href="#top">Return to Top</a>
         </div>
+        <script>
+            var date = new Date();
+            document.getElementById("copyright").innerHTML = "© " + date.getFullYear() + " Dennis Dao. All rights reserved.";
+        </script>
    </body>
 </html>

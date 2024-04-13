@@ -3,41 +3,49 @@
     <head>
         <title>My Skills</title>
         <link rel="stylesheet" href="stylesheets/stylesheet.css"/>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <link rel="icon" type="image/x-icon" href="images/favicon.ico">
         <script src="files/darkmode.js" defer></script> 
+        <script src="files/menu.js"></script>
         <meta charset="utf-8">
     </head>
 
     <body class="page light-mode">
         <div id="navbar">
-            <a href="index.html" id="logo">Dennis Dao</a>
+            <div class="navbar-item" style="width:30%;">
+                <a href="index.html" id="logo">Dennis Dao</a>
+            </div>
 
-            <div id="navbar-right">
+            <div class="navbar-item-menu" id="navbarMenu" style="width:50%;">
                 <a href="index.html">Home</a>
                 <a href="about.html">About</a>
                 <a class="active" href="skills.html">Skills</a>
+                <a href="exp.html">Experience</a>
                 <a href="projects.html">Projects</a>
                 <a href="resume.html">Resume</a>
                 <a href="contact.html">Contact</a>
+                <a href="javascript:void(0);" class="icon" onclick="responsiveMenu()">
+                    <i class="fa fa-bars"></i>
+                </a>
+            </div>
+
+            <div class="navbar-item" style="width:20%;">
+                <div class="toggle">
+                    <input type="checkbox" id="theme" class="toggle-input">
+                    <label for="theme" class="toggle-label">
+                        <img src="./images/moon.png" alt="Dark mode" class="toggle-icon">
+                    </label>
+                </div>
             </div>
         </div>
 
         <div id="content">
-            <div class="toggle">
-                <input type="checkbox" id="theme" class="toggle-input">
-                <label for="theme" class="toggle-label">
-                    <img src="./images/moon.png" alt="Dark mode" class="toggle-icon">
-                </label>
+            <div class="box-head">
+                Skills
             </div>
-
-            <h1>Skills</h1>
-            <table>
-                <tr>
-                    <th>Languages</th>
-                    <th>Technologies</th>
-                    <th>Libraries/Frameworks</th>
-                </tr>
-                <td style="text-align: left;">
+            <div class="box-container">
+                <div class="box" style="text-align: left;">
+                    <b>Languages</b><br/>
                     <ul style="list-style-type:square;">
                         <li>Python</li>
                         <li>C</li>
@@ -51,8 +59,10 @@
                         <li>Power Fx</li>
                         <li>C++</li>
                     </ul>
-                </td>
-                <td style="text-align: left;">
+                </div>
+
+                <div class="box" style="text-align: left;">
+                    <b>Technologies</b><br/>
                     <ul style="list-style-type:square;">
                         <li>Unity</li>
                         <li>GitHub</li>
@@ -69,8 +79,10 @@
                         <li>Docker</li>
                         <li>MongoDB</li>
                     </ul>
-                </td>
-                <td style="text-align: left;">
+                </div>
+
+                <div class="box" style="text-align: left;">
+                    <b>Frameworks and Libraries</b><br/>
                     <ul style="list-style-type:square;">
                         <li>.NET</li>
                         <li>Flask</li>
@@ -79,11 +91,17 @@
                         <li>React</li>
                         <li>Spring Boot</li>
                     </ul>
-                </td>
-            </table>
+                </div>
+            </div>
         </div>
+        
         <div class="footer">
+            <p id="copyright"></p>
             <a href="#top">Return to Top</a>
         </div>
+        <script>
+            var date = new Date();
+            document.getElementById("copyright").innerHTML = "© " + date.getFullYear() + " Dennis Dao. All rights reserved.";
+        </script>
    </body>
 </html>

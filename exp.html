@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>About Me</title>
+        <link rel="stylesheet" href="stylesheets/stylesheet.css"/>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+        <script src="files/darkmode.js" defer></script> 
+        <script src="files/menu.js"></script>
+        <meta charset="utf-8">
+    </head>
+
+    <body class="page light-mode">
+        <div id="navbar">
+            <div class="navbar-item" style="width:30%;">
+                <a href="index.html" id="logo">Dennis Dao</a>
+            </div>
+
+            <div class="navbar-item-menu" id="navbarMenu" style="width:50%;">
+                <a href="index.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="skills.html">Skills</a>
+                <a class="active" href="exp.html">Experience</a>
+                <a href="projects.html">Projects</a>
+                <a href="resume.html">Resume</a>
+                <a href="contact.html">Contact</a>
+                <a href="javascript:void(0);" class="icon" onclick="responsiveMenu()">
+                    <i class="fa fa-bars"></i>
+                </a>
+            </div>
+
+            <div class="navbar-item" style="width:20%;">
+                <div class="toggle">
+                    <input type="checkbox" id="theme" class="toggle-input">
+                    <label for="theme" class="toggle-label">
+                        <img src="./images/moon.png" alt="Dark mode" class="toggle-icon">
+                    </label>
+                </div>
+            </div>
+        </div>
+
+        <div id="content">
+            <h2>Education</h2>
+            <div class="box-container">
+                <div class="box" style="text-align: left;">
+                    <h3>University of Windsor</h4>
+                    <h4>B.CS Computer Science (Honours) with Co-op</h4>
+                    <h5>September 2019 - December 2023</h5>
+                    <ul>
+                        <li>Specialized in Game Development</li>
+                        <li>Minored in Mathematics</li>
+                        <li><b>92.5%</b> Major Average, <b>92.98%</b> Cumulative Average</li>
+                    </ul>
+                </div>
+            </div>
+
+            <h2>Experience</h2>
+            <div class="box-container">
+                <div class="box" style="text-align: left;">
+                    <h3>University of Windsor</h4>
+                    <h4>Undergraduate Teaching Assistant</h4>
+                    <h5>September 2020 - December 2023</h5>
+                    <ul>
+                        <li>
+                            Evaluated quality of student work, led lab sessions, proctored exams, and answered 
+                            student questions during weekly office hours for classes of <b>70+ students</b>
+                        </li>
+                        <li>
+                            Courses worked for include:
+                            <ul>
+                                <li>Introduction to Algorithms and Programming I</li>
+                                <li>System Programming</li>
+                                <li>Introduction to the Internet</li>
+                                <li>Computer Languages, Grammars, and Translators</li>
+                                <li>Advanced Website Design</li>
+                                <li>Game Design, Development, and Tools</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="box" style="text-align: left;">
+                    <h3>Windsor-Detroit Bridge Authority</h4>
+                    <h4>IT/Facilities Co-op Student</h4>
+                    <h5>September 2022 - August 2023</h5>
+                    <ul>
+                        <li>
+                            Supported IT and Facilities staff with troubleshooting technical problems, participating in the on-boarding of new employees, and with records administration using <b>Power 
+                            Platform</b> <i>(hiatus Jan. 2023 - Apr. 2023)</i>
+                        </li>
+                        <li>
+                            Contributed to the company's return to office plan by drafting employee handbooks, moving office furniture, setting up office workstations and IT equipment, and rolled out new 
+                            work phones to 60+ employees for security improvements
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="box" style="text-align: left;">
+                    <h3>The Narmco Group</h4>
+                    <h4>IT Co-op Student</h4>
+                    <h5>January 2022 - April 2022</h5>
+                    <ul>
+                        <li>
+                            Designed, configured, and implemented software and services for network operating efficiency with <b>Visual Basic</b> and <b>MS SQL</b>
+                        </li>
+                        <li>
+                            Maintained the software of the company through the helpdesk to ensure operating problems are resolved and the availability of disk space, response time, and information security
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="box-container">
+                <div class="box" style="text-align: left;">
+                    <h3>Communitech</h4>
+                    <h4>Graphic Designer</h4>
+                    <h5>May 2021 - June 2021</h5>
+                    <ul>
+                        <li>
+                            Developed photos, logos, social media campaigns, infographics, and other marketing documents for small to medium businesses using <b>Adobe Creative Cloud</b> software in the Digital Main Street program
+                        </li>
+                        <li>
+                            Met with clients regularly to showcase designs done for them and revise it based on their feedback
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+        <div class="footer">
+            <p id="copyright"></p>
+            <a href="#top">Return to Top</a>
+        </div>
+        <script>
+            var date = new Date();
+            document.getElementById("copyright").innerHTML = "© " + date.getFullYear() + " Dennis Dao. All rights reserved.";
+        </script>
+   </body>
+</html>
