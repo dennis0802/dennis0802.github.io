@@ -3,7 +3,7 @@
 body{
     margin: 0;
     font-family: Arial, Helvetica, sans-serif;
-    background-color: #FFFFFF;
+    background-color: #F1FAFF;
     color: #000000;
 }
 
@@ -30,7 +30,7 @@ body{
     border-radius: 50px;
     height: 70px;
     width: 50px;
-    background-color: #FFFFFF;
+    background-color: #F1FAFF;
     transition: all 0.4s ease;
 }
 
@@ -44,7 +44,7 @@ body{
 
 .dark-mode {
     background-color: #383838;
-    color: #FFFFFF;
+    color: #F1FAFF;
 }
 
 .dark-mode a{
@@ -56,7 +56,7 @@ body{
 }
 
 .light-mode {
-    background-color: #FFFFFF;
+    background-color: #F1FAFF;
     color: #000000;
 }
 
@@ -86,7 +86,7 @@ body{
 
 #navbar a{
     float: left;
-    color:#FFFFFF;
+    color:#F1FAFF;
     text-align: center;
     padding: 12px;
     text-decoration: none;
@@ -131,7 +131,7 @@ body{
 
 .button {
     border: none;
-    color: #FFFFFF;
+    color: #F1FAFF;
     padding: 16px 32px;
     text-align: center;
     text-decoration: none;
@@ -143,7 +143,7 @@ body{
 }
 
 .buttonTheme {
-    background-color: #FFFFFF;
+    background-color: #F1FAFF;
     color: #000000;
     border: 2px solid #0055DD;
     border-radius:10px;
@@ -151,7 +151,7 @@ body{
 
 .buttonTheme:hover {
     background-color: #0055DD;
-    color: #FFFFFF;
+    color: #F1FAFF;
 }
 
 .footer {
@@ -161,12 +161,12 @@ body{
     bottom: 0;
     width: 100%;
     background-color:#0055DD;
-    color:#FFFFFF;
+    color:#F1FAFF;
     text-align: center;
 }
 
 .footer a:link{
-    color:#FFFFFF;
+    color:#F1FAFF;
 }
 
 .footer a:visited{
@@ -177,7 +177,7 @@ body{
 .box-head {
     background-color: #0055DD;
     font-weight: bold;
-    color: #FFFFFF;
+    color: #F1FAFF;
     width: 100%;
     text-align: center;
     padding: 10px 0 10px 0;
@@ -189,7 +189,8 @@ body{
   width: 100%;
 }
 
-.box {
+.box {  
+  background-color: rgba(248, 247, 244, 0.39);
   display: table-cell;
   padding: 16px;
   transition: box-shadow .3s;
@@ -221,7 +222,7 @@ body{
     tr th {
         border: 3px solid #0055DD;
         background: #0055DD;
-        color: white;
+        color: #F1FAFF;
         text-align: center;
     }
     tr td {
